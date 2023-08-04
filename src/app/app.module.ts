@@ -7,25 +7,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { CascadeSelectModule } from 'primeng/cascadeselect';
 import { FormsModule } from '@angular/forms';
-import { ButtonComponent } from './components/button/button.component';
+import { CardModule } from 'primeng/card';
 import { LoginComponent } from './pages/login/login.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 @NgModule({
-  declarations: [
-    AppComponent,
-    ButtonComponent,
-    LoginComponent,
-    SidebarComponent
-  ],
+  declarations: [AppComponent, LoginComponent, SidebarComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ButtonModule,
+    CardModule,
     CascadeSelectModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

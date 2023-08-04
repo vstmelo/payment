@@ -1,17 +1,33 @@
-<div class="flex w-full">
-    <app-sidebar>
-        texto ?
-    </app-sidebar>
-    <!-- <div class="field grid">
-        <label for="firstname3" class="col-fixed">Login</label>
-        <div class="col">
-            <input id="firstname3" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
-        </div>
+<p-card header="Login" [style]="{ width: '360px', padding: '1rem' }">
+  <ng-template pTemplate="header">
+    <img
+      alt="Card"
+      src="https://primefaces.org/cdn/primeng/images/usercard.png"
+    />
+  </ng-template>
+  <ng-template pTemplate="p-card-content">
+    <div class="field grid">
+      <label for="login" class="col-fixed">Login</label>
+      <div class="col">
+        <input
+          id="login"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary"
+        />
+      </div>
     </div>
     <div class="field grid">
-        <label for="lastname3" class="col-fixed">Password</label>
-        <div class="col">
-            <input id="lastname3" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
-        </div>
-    </div> -->
-</div>
+      <label for="password" class="col-fixed">Password</label>
+      <div class="col">
+        <input
+          id="password"
+          type="text"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary"
+        />
+      </div>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <p-button label="Login" icon="pi pi-check" class="m-auto"></p-button>
+  </ng-template>
+</p-card>
