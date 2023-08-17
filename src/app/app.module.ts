@@ -10,16 +10,19 @@ import { FormsModule } from '@angular/forms';
 import { CardModule } from 'primeng/card';
 import { LoginComponent } from './pages/login/login.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SidebarModule } from 'primeng/sidebar';
+
 @NgModule({
   declarations: [AppComponent, LoginComponent, SidebarComponent],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
+    SidebarModule,
     CardModule,
     CascadeSelectModule,
     FormsModule,
-    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
