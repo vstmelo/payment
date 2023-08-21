@@ -13,9 +13,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, SidebarComponent, RegisterComponent, HomeComponent],
+  declarations: [AppComponent, LoginComponent, SidebarComponent, RegisterComponent, HomeComponent, CardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
