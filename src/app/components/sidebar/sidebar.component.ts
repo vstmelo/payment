@@ -6,5 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent {
-
+  @Input() img: string | undefined;
+  @Input() text: string | undefined;
 }

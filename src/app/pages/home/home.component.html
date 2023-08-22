@@ -1,5 +1,31 @@
-<div class="flex">
-    <app-card [header]="'Cobranças pagas'" [subheader]="'R$: 53k'" id="{{data.id}}" cliente={{data.cliente}} valor="{{data.valor}}">
-    </app-card>
- 
+<div class="flex h-full">
+  <app-sidebar class="h-"/>
+  <app-card
+    [header]="'Cobranças pagas'"
+    [subheader]="'R$: 53k'"
+    id="{{ data.id }}"
+    cliente="{{ data.cliente }}"
+    valor="{{ data.valor }}"
+    img="https://cdn-icons-png.flaticon.com/512/781/781885.png"
+    
+  >
+  </app-card>
+  <app-card
+    [header]="'Cobranças vencidas'"
+    [subheader]="'R$: 53k'"
+    id="{{ data.id }}"
+    cliente="{{ data.cliente }}"
+    valor="{{ data.valor }}"
+    img="https://cdn-icons-png.flaticon.com/512/781/781862.png"
+  >
+  </app-card>
+  <app-card
+    [header]="'Cobranças previstas'"
+    [subheader]="'R$: 53k'"
+    id="{{ data.id }}"
+    cliente="{{ data.cliente }}"
+    valor="{{ data.valor }}"
+    img="https://cdn-icons-png.flaticon.com/512/781/781920.png"
+  >
+  </app-card>
 </div>
