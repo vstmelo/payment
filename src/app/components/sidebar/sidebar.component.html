@@ -1,11 +1,15 @@
 <div
-  class=" top-0 left-0 font-bold align-items-center justify-content-center max-w-30rem h-full bg-no-repeat bg-cover"
+  class="top-0 left-0 font-bold align-items-center justify-content-center max-w-30rem h-full bg-no-repeat bg-cover"
   style="
       background-image: url('{{ img }}');
       box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.3);
     "
 >
-  <h3 class="p-8 w-auto" style="text-align: center">
-    {{ text }}
-  </h3>
+  <ng-container *ngIf="isLoginRoute(); else homeRoute">
+    <h3 class="p-8 w-auto" style="text-align: center">{{ text }}</h3>
+  </ng-container>
+
+  <ng-template #homeRoute>
+    <div>{{ otherHtml }}</div>
+  </ng-template>
 </div>

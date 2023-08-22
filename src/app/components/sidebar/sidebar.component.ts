@@ -8,4 +8,8 @@ import { Component, Input } from '@angular/core';
 export class SidebarComponent {
   @Input() img: string | undefined;
   @Input() text: string | undefined;
+  otherHtml = 'teste'
+  isLoginRoute() {
+    return window.location.pathname === '/login';
+  }
 }

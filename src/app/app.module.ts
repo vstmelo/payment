@@ -16,7 +16,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, SidebarComponent, RegisterComponent, HomeComponent, CardComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    SidebarComponent,
+    RegisterComponent,
+    HomeComponent,
+    CardComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
