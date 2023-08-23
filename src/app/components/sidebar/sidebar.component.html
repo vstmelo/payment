@@ -10,6 +10,23 @@
   </ng-container>
 
   <ng-template #homeRoute>
-    <div>{{ otherHtml }}</div>
+    <div class="grid flex-column w-max p-4 h-full ">
+      <div class="col-1 w-full">
+        <div [innerHTML]="homeSvg">
+
+        </div>
+      </div>
+      <div class="col-2 w-full">
+        <div [innerHTML]="clientSvg">
+
+        </div>
+      </div>
+      <div class="col-3 w-full">
+        <div [innerHTML]="cobrancasSvg">
+
+        </div>
+          
+      </div>
+    </div>
   </ng-template>
 </div>
