@@ -14,6 +14,8 @@ import { SidebarModule } from 'primeng/sidebar';
 import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
+import { DividerModule } from 'primeng/divider';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,15 @@ import { CardComponent } from './components/card/card.component';
     RegisterComponent,
     HomeComponent,
     CardComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
+    TableModule,
+    DividerModule,
     SidebarModule,
     CardModule,
     CascadeSelectModule,

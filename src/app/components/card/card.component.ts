@@ -12,4 +12,5 @@ export class CardComponent {
   @Input() cliente: string | number | undefined;
   @Input() valor: string | number | undefined;
   @Input() img: string | number | undefined;
+  @Input() nome: string | number | undefined;
 }
