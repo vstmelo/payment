@@ -11,14 +11,29 @@ import { CardModule } from 'primeng/card';
 import { LoginComponent } from './pages/login/login.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SidebarModule } from 'primeng/sidebar';
+import { RegisterComponent } from './pages/register/register.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CardComponent } from './components/card/card.component';
+import { DividerModule } from 'primeng/divider';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, SidebarComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    SidebarComponent,
+    RegisterComponent,
+    HomeComponent,
+    CardComponent,
+
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
+    TableModule,
+    DividerModule,
     SidebarModule,
     CardModule,
     CascadeSelectModule,

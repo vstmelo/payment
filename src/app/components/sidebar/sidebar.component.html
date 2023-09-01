@@ -1,7 +1,81 @@
-<div class="flex flex-wrap align-items-center justify-content-center h-full w-full">
+<div
+  class="top-0 left-0 font-bold align-items-center justify-content-center w-full h-full bg-no-repeat bg-cover"
+  style="
+      background-image: url('{{ img }}');
+      box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.3);
+    "
+>
   <div
-    class="absolute top-0 left-0 font-bold align-items-center justify-content-center w-30rem h-full bg-no-repeat bg-cover"
-    style="background-image: url('../../../assets/images/login.svg')"
-  ></div>
-</div>
+    [class.selected]="isRouteActive('/login')"
+    *ngIf="isRouteActive('/login')"
+    class="h-16rem flex justify-content-center align-items-center"
+  >
+    <h3>
+      {{ text }}
+    </h3>
+  </div>
+  <div *ngIf="!isRouteActive('/login')">
+    <div
+      [class.selected]="isRouteActive('/home')"
+      *ngIf="isRouteActive('/home')"
+    >
+      <a routerLink="/home">
+        <div
+          *ngIf="isRouteActive('/home')"
+          class="col-1 w-full"
+          [innerHTML]="homeSelected"
+        ></div>
+      </a>
+    </div>
 
+    <div
+      [class.selected]="isRouteActive('/clients')"
+      *ngIf="isRouteActive('/clients')"
+    >
+      <a routerLink="/clients">
+        <div
+          *ngIf="isRouteActive('/clients')"
+          class="col-1 w-full"
+          [innerHTML]="clientSelected"
+        ></div>
+      </a>
+    </div>
+
+    <div
+      [class.selected]="isRouteActive('/charges')"
+      *ngIf="isRouteActive('/charges')"
+    >
+      <a routerLink="/charges">
+        <div
+          *ngIf="isRouteActive('/charges')"
+          class="col-1 w-full"
+          [innerHTML]="cobrancasSelected"
+        ></div>
+      </a>
+    </div>
+
+    <a>
+      <div
+        *ngIf="!isRouteActive('/home')"
+        class="col-1 w-full"
+        [innerHTML]="homeSvg"
+      ></div>
+    </a>
+
+    <a>
+      <div
+        *ngIf="!isRouteActive('/clients')"
+        class="col-1 w-full"
+        [innerHTML]="clientSvg"
+      ></div>
+    </a>
+
+    <a>
+      <div
+        *ngIf="!isRouteActive('/charges')"
+        class="col-1 w-full"
+        [innerHTML]="cobrancasSvg"
+      ></div>
+    </a>
+  </div>
+</div>
