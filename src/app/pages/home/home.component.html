@@ -1,27 +1,8 @@
-<div class="flex h-full">
-  <app-sidebar >
-     
-  </app-sidebar>
-  <app-card
-    [header]="'Cobranças pagas'"
-    [subheader]="'R$: 53k'"
-
-    img="https://cdn-icons-png.flaticon.com/512/781/781885.png"
-    
-  >
-  </app-card>
-  <app-card
-    [header]="'Cobranças vencidas'"
-    [subheader]="'R$: 53k'"
-
-    img="https://cdn-icons-png.flaticon.com/512/781/781862.png"
-  >
-  </app-card>
-  <app-card
-  [header]="'Cobranças previstas'"
-  [subheader]="'R$: 53k'"
- 
-  img="https://cdn-icons-png.flaticon.com/512/781/781920.png"
->
-  </app-card>
+<div class="flex w-full h-full ">
+  <app-sidebar> </app-sidebar>
+  <div class="w-full flex align-content-center justify-content-center gap-4">
+    <app-card [header]="'Cobranças pagas'" />
+    <app-card [header]="'Cobranças vencidas'" />
+    <app-card [header]="'Cobranças previstas'" />
+  </div>
 </div>

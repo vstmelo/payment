@@ -13,15 +13,12 @@ interface IData {
 })
 export class CardComponent implements OnInit {
   @Input() header: string | undefined;
-  @Input() subheader: string | undefined;
-  @Input() img: string | number | undefined;
   data!: IData[];
 
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     this.dataService.getDatas().then((data: any) => {
-      console.log(data)
       this.data = data;
     });
   }
