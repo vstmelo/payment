@@ -1,9 +1,16 @@
-<div
-  class="flex justify-content-center w-full h-auto border-round-xl mx-4 my-3"
+<section
+  class="grid justify-content-center align w-36rem h-auto border-round-xl mx-4 my-3 card"
   [style.box-shadow]="'0px 1px 5px 2px rgba(0, 0, 0, 0.3)'"
 >
-  <p-table [value]="data" >
-    <ng-template pTemplate="header">
+  <div
+    class="flex surface-50 h-auto w-full align-content-center justify-content-center p-2"
+  >
+    <strong>
+      {{ header }}
+    </strong>
+  </div>
+  <p-table [value]="data" class="w-full p-3">
+    <ng-template pTemplate="header" class="w-full">
       <tr>
         <th class="bg-white">ID</th>
         <th class="bg-white">Cliente</th>
@@ -18,4 +25,4 @@
       </tr>
     </ng-template>
   </p-table>
-</div>
+</section>
