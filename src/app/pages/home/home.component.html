@@ -1,8 +1,43 @@
 <section class="flex w-full h-full">
   <app-sidebar> </app-sidebar>
-  <div class="w-full flex align-content-center justify-content-center gap-4">
-    <app-card [header]="'Cobranças pagas'" />
-    <app-card [header]="'Cobranças vencidas'" />
-    <app-card [header]="'Cobranças previstas'" />
+  <div class="w-full">
+    <div class="flex align-content-center justify-content-center gap-4">
+      <app-card
+        [header]="'Cobranças pagas'"
+        [field1]="'ID'"
+        [field2]="'Cliente'"
+        [field3]="'Valor'"
+      />
+      <app-card
+        [header]="'Cobranças vencidas'"
+        [field1]="'ID'"
+        [field2]="'Cliente'"
+        [field3]="'Valor'"
+      />
+      <app-card
+        [header]="'Cobranças previstas'"
+        [field1]="'ID'"
+        [field2]="'Cliente'"
+        [field3]="'Valor'"
+      />
+    </div>
+    <div class="flex align-content-around justify-content-center p-8">
+      <app-card
+        [header]="'Clientes inadimplentes'"
+        [field1]="'Cliente'"
+        [field2]="'ID'"
+        [field3]="'Data'"
+        class="w-70rem p-3"
+      >
+      </app-card>
+      <app-card
+        [header]="'Clientes em dia'"
+        [field1]="'Cliente'"
+        [field2]="'ID'"
+        [field3]="'Data'"
+        class="w-75rem p-3"
+      >
+      </app-card>
+    </div>
   </div>
 </section>
