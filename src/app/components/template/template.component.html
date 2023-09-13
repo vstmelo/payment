@@ -1,14 +1,11 @@
-<section class="flex w-full h-full relative" #container>
-  <app-sidebar> </app-sidebar>
-  <div>
-    <div
-      class="container flex justify-content-between p-5 mb-1 border-bottom-2"
+<section class="flex w-full h-full relative " #container>
+  <div class="flex justify-content-center align-content-center">
+    <app-sidebar
+      [class.selected]="isRouteActive('/login')"
+      *ngIf="isRouteActive('/login')"
+      img="../../../assets/images/login.svg"
+      text="Gerencie todos os pagamentos da sua empresa em um só lugar"   
     >
-      <h3 app-card>teste</h3>
-    </div>
-    <div>
-      
- 
-    </div>
+    </app-sidebar>
   </div>
 </section>

@@ -16,6 +16,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { DividerModule } from 'primeng/divider';
 import { TableModule } from 'primeng/table';
+import { TemplateComponent } from './components/template/template.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TableModule } from 'primeng/table';
     RegisterComponent,
     HomeComponent,
     CardComponent,
+    TemplateComponent,
 
   ],
   imports: [

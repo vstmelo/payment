@@ -8,12 +8,12 @@
   <div
     [class.selected]="isRouteActive('/login')"
     *ngIf="isRouteActive('/login')"
-    class="h-16rem flex justify-content-center align-items-center"
   >
     <h3>
       {{ text }}
     </h3>
   </div>
+  
   <div *ngIf="!isRouteActive('/login')">
     <div
       [class.selected]="isRouteActive('/home')"
